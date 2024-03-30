@@ -2,15 +2,20 @@
 <html lang="ja">
 <head>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <title>てらしま整骨院</title>
-     <link rel="stylesheet" href="../statics/style.css>
+     <link rel="stylesheet" href="../style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="../statics/index.js"></script>
+      <script type="text/javascript" src="../index.js"></script>
 </head>
-<!--大体完成-->
+<!--sp/pcともにまる
+りんたろうへ
+・文字情報があっているか確認してください（特に病名）
+・ページタイトル適当につけてしまったので確認してください
+-->
 <body>
   <header class="bar">
     <div class="menu">
@@ -21,11 +26,11 @@
     <nav class="gnav">
         <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="../Index.html">Top</a></li>
+              <li class="gnav__menu__item"><a href="../index.html">Top</a></li>
               <li class="gnav__menu__item"><a href="../pages/access.html">アクセス</a></li>
               <li class="gnav__menu__item"><a href="../pages/hospital.html">院内紹介</a></li>
               <li class="gnav__menu__item"><a href="../pages/accident.html">交通事故治療について</a></li>
-              <li class="gnav__menu__item"><a href="../pages/heal.html">その他治療について</a></li>
+              <li class="gnav__menu__item"><a href="../pages/heal.html">治療について</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +40,7 @@
 </header>
     <div class="hero">
         <img  class="herophoto" src="../image/hero.png">
-        <p>その他治療について</p>
+        <p>治療について</p>
     </div>
     <div>
         <p class="onayami">
@@ -89,9 +94,10 @@
         </ul>
     </div>
    <div>
-    <p class="tiryou">
+    <p class="kamo">
         それは以下のような病気かもしれません。<br />
-        てらしま整骨院ではこういった症状や病気にも対応いたします。
+        てらしま整骨院ではこのような症状や病気にも<br class="naiyo" />
+        対応いたします。
     </p>
    </div>
     <div class="kega_content">
@@ -205,7 +211,7 @@
             </p>
         </div>
         <div class="f_content">
-                <p class="paragraph"><a href="../Index.html">HOME</a></p>
+                <p class="paragraph"><a href="../index.html">HOME</a></p>
                 <p class="paragraph"><a href="../pages/access.html">アクセス</a></p>
                 <p class="paragraph"><a href="../pages/hospital.html">院内案内</a></p>
         </div>
@@ -220,7 +226,7 @@
             margin: 0;
         }
         .onayami{
-            margin: 1em;
+            margin: 1em 1em 0 1em;
             font-weight: bold;
     border-bottom: 3px #eda93b solid;
     padding: 0 3px 10px 3px;
@@ -229,7 +235,7 @@
         .heal_list{
             text-align: left;
         }
-        .tiryou{
+        .tiryou,.kamo{
             letter-spacing: 0.5px;
             line-height: 18px;
             font-size: 14px;
@@ -241,7 +247,7 @@
             padding: 1em;
         }
         .kega_content{
-            margin: 1em;
+            margin: 1em 1em 2em 1em;
         }
         /*ベース*/
 .toggle {
@@ -286,13 +292,28 @@
 .toggle:checked + .Label::before {
 	transform: rotate(-45deg) !important;
 }
+@media screen and (min-width: 767px){
+    .naiyo{
+        display: none;
+    }
+}
 @media screen and (max-width: 767px) {
     .tiryou{
-        margin: 0 0 0 2em;
+        margin: 0 0 0 1em;
     }
     .onayami{
         margin: 0 auto;
         padding: 10px 0;
+        font-size: smaller;
+    }
+    .kamo{
+        text-align: center;
+        letter-spacing: 0.5px;
+            line-height: 18px;
+            font-size: 14px;
+            color:#190F0C;
+            margin: 1em;
+            font-weight: bold;
     }
 }
        

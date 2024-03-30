@@ -2,13 +2,14 @@
 <html lang="ja">
 <head>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <title>てらしま整骨院</title>
-     <link rel="stylesheet" href="statics/style.css">
+     <link rel="stylesheet" href="style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="statics/index.js"></script>
+      <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
     <nav class="gnav">
         <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="Index.html">Top</a></li>
+              <li class="gnav__menu__item"><a href="index.html">Top</a></li>
               <li class="gnav__menu__item"><a href="./pages/access.html">アクセス</a></li>
               <li class="gnav__menu__item"><a href="./pages/hospital.html">院内紹介</a></li>
               <li class="gnav__menu__item"><a href="./pages/accident.html">交通事故治療について</a></li>
-              <li class="gnav__menu__item"><a href="./pages/heal.html">その他治療について</a></li>
+              <li class="gnav__menu__item"><a href="./pages/heal.html">治療について</a></li>
             </ul>
         </div>
     </nav>
@@ -52,6 +53,8 @@
         <div class="osu_circle">駐車場6台</div>
         <div class="osu_circle">各種保険適応</div>
         <div class="osu_circle">交通事故治療</div>
+    </div>
+    <div class="osusumesp">
         <div class="osu_circle">8:30から受付</div>
         <div class="osu_circle">19:30まで受付</div>
       </div>
@@ -97,20 +100,20 @@
  <div class="news">
   <p>新着情報</p>
   <div class="newscontainer">
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集締切まであと2日！</a></div>
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集受付開始！</a></div>
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集締切まであと2日！</a></div>
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集受付開始！</a></div>
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集締切まであと2日！</a></div>
-   <div class="paragraph"><a href="pages/event.html#tour">交流企画参加希望フォーム 一次募集受付開始！</a></div>
-   <div class="paragraph">対面説明会 参加希望フォームは<a href="https://docs.google.com/forms/d/e/1FAIpQLSclxm2qaAjPRRUA55MydFYBVwnnfTI-fxwsibBX_OGSdzU8xg/viewform" target="_blank" rel="noreferrer noopener">こちら</a>から！</div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph"><a href="pages/event.html#tour">新着情報</a></div>
+   <div class="paragraph">何とかは<a href="https://docs.google.com/forms/d/e/1FAIpQLSclxm2qaAjPRRUA55MydFYBVwnnfTI-fxwsibBX_OGSdzU8xg/viewform" target="_blank" rel="noreferrer noopener">こちら</a>から！</div>
   </div>
  </div>
 
  <!--応援します！-->
  <div class="shinia">
     <p class="underline ouen">てらしま整骨院は70歳、80歳の方々を応援します！</p>
-    <p class="paragraph ouentext">
+    <p class="ouentext">
         仕事に従事して頑張ってきて、
         <br />「これからは自分の好きなことを始めよう」
         <br />そう思っていた矢先に体の自由が......
@@ -127,7 +130,7 @@
         <li><span>何もすることもなく、外にでるきっかけがない......<br />でもこのまま体が弱っていってしまうのは不安</span></li>
         <li><span>パートナーが何もしなくて先々不安</span></li>
     </ul>
-   <p class="paragraph ouentext">
+   <p class="ouentext">
         <br />そんな方々のお悩みにも相談にも乗らせていただきます。
         <br />ご家族や介護保険に頼らなくても済む生活を
         <br />一緒に目指しましょう！
@@ -144,7 +147,7 @@
         </p>
     </div>
     <div class="f_content">
-            <p class="paragraph"><a href="Index.html">HOME</a></p>
+            <p class="paragraph"><a href="index.html">HOME</a></p>
             <p class="paragraph"><a href="./pages/access.html">アクセス</a></p>
             <p class="paragraph"><a href="./pages/hospital.html">院内案内</a></p>
     </div>
@@ -236,7 +239,7 @@
    text-decoration: none;
  }
  
-   .news p{
+.news p{
    text-align: center;
    font-weight: bold;
    font-size: 20px;
@@ -260,16 +263,23 @@
  }
 /*応援します！*/
 .shinia{
-    padding: 3rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
 }
 
 .ouen{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto;
 }
 .ouentext{
     text-align: center;
+    width:100%;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 14px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    color:#190F0C;
 }
 .ouentext a{
     font-weight: bold;
@@ -297,20 +307,36 @@
     }
     
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     .osusumesp{
         display: none;
     } 
   }
   @media screen and (max-width: 767px) {
+    .news{
+        width: 280px;
+        height: 180px;
+        margin-top: 10px;
+
+    }
+    .newscontainer{
+        width: 250px;
+    }
     .aisatu{
-        width: 60%;
+        width: 80%;
     }
     .osusume{
         display:none;
     }
-    .shinia{
-        padding: 3rem;
+    .osusumesp,.icon_top{
+        margin: 1rem 0 1rem 0;
+    }
+    .iconbtn{
+        flex-wrap: wrap;
+    }
+    .icon_container{
+        width: 25%;
+        margin: 2rem;
     }
     .icon_container p{
         font-size: 12px;
@@ -318,9 +344,13 @@
     .nashi{
         display:none;
     }
-    .osusumesp{
-        flex-wrap: wrap;
+    .ouen{
+        font-size: 14px;
     }
+    .shinia{
+        margin: 2rem 1rem 1rem 1rem;
+    }
+   
   }
  </style>
  </body>

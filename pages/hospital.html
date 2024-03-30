@@ -2,13 +2,14 @@
 <html lang="ja">
 <head>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <title>てらしま整骨院</title>
-     <link rel="stylesheet" href="../statics/style.css">
+     <link rel="stylesheet" href="../style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="../statics/index.js"></script>
+      <script type="text/javascript" src="../index.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
     <nav class="gnav">
         <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="../Index.html">Top</a></li>
+              <li class="gnav__menu__item"><a href="../index.html">Top</a></li>
               <li class="gnav__menu__item"><a href="../pages/access.html">アクセス</a></li>
               <li class="gnav__menu__item"><a href="../pages/hospital.html">院内紹介</a></li>
               <li class="gnav__menu__item"><a href="../pages/accident.html">交通事故治療について</a></li>
-              <li class="gnav__menu__item"><a href="../pages/heal.html">その他治療について</a></li>
+              <li class="gnav__menu__item"><a href="../pages/heal.html">治療について</a></li>
             </ul>
         </div>
     </nav>
@@ -66,19 +67,38 @@
     </div>
     <div class="virus_text">
       <p class="paragraph">
-        当院では〜〜〜〜〜〜〜〜〜
+        当院は待合室にパンダがおりお子さんとご一緒に来院していただいても大丈夫です。
       </p>
     </div>
     <div class="virus">
       <div class="virus_item migi">
-        <img src="../image/kashitu.jpg">
+        <img src="../image/iriguti.jpg">
       </div>
       <div class="virus_item migi">
-        <img src="../image/virus.jpg">
+        <img src="../image/matiai.jpg">
       </div>
       <div class="virus_item">
-        <img src="../image/kenon.jpg">
+        <img src="../image/matiaipanda.jpg">
       </div>
+    </div>
+    <div class="virus">
+      <div class="virus_item migi">
+        <img src="../image/sensei.jpg">
+      </div>
+      <div class="virus_item migi">
+        <img src="../image/nazokikai.jpg">
+      </div>
+      <div class="virus_item">
+        <img src="../image/shinsatu.jpg">
+      </div>
+    </div>
+    <div class="virus_text">
+      <p class="paragraph">
+        ウォーターベッドを導入しており〜〜
+      </p>
+    </div>
+    <div class="hos_osusume shita">
+      <img src="../image/kikai.jpg">
     </div>
     <div class="footer">
       <div class="name">
@@ -90,7 +110,7 @@
           </p>
       </div>
       <div class="f_content">
-              <p class="paragraph"><a href="../Index.html">HOME</a></p>
+              <p class="paragraph"><a href="../index.html">HOME</a></p>
               <p class="paragraph"><a href="../pages/access.html">アクセス</a></p>
               <p class="paragraph"><a href="../pages/hospital.html">院内案内</a></p>
       </div>
@@ -122,6 +142,32 @@
         }
         .migi{
           padding-right: 3rem;
+        }
+        .hos_osusume{
+          width: 20%;
+          margin: 0 auto;
+        }
+        .hos_osusume img{
+          width: 100%;
+        }
+        .shita{
+          margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 767px){
+          .virus{
+            flex-direction: column;
+            align-items: center;
+          }
+          .migi{
+            padding: 0;
+          }
+          .virus_item{
+            width: 40%;
+            padding-bottom: 30px;
+          }
+          .hos_osusume{
+            width: 40%;
+          }
         }
     </style>
 </body>

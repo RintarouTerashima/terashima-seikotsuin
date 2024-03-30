@@ -2,15 +2,19 @@
 <html lang="ja">
 <head>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <title>てらしま整骨院</title>
-     <link rel="stylesheet" href="../statics/style.css">
+     <link rel="stylesheet" href="../style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="../statics/index.js"></script>
+      <script type="text/javascript" src="../index.js"></script>
 </head>
-
+<!--sp/pcともにまる
+りんたろうへ
+・文字情報を多少言い回しを変えるなどした（気がする）のでお父さんに確認してください
+-->
 <body>
   <header class="bar">
     <div class="menu">
@@ -21,11 +25,11 @@
     <nav class="gnav">
         <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="../Index.html">Top</a></li>
+              <li class="gnav__menu__item"><a href="../index.html">Top</a></li>
               <li class="gnav__menu__item"><a href="../pages/access.html">アクセス</a></li>
               <li class="gnav__menu__item"><a href="../pages/hospital.html">院内紹介</a></li>
               <li class="gnav__menu__item"><a href="../pages/accident.html">交通事故治療について</a></li>
-              <li class="gnav__menu__item"><a href="../pages/heal.html">その他治療について</a></li>
+              <li class="gnav__menu__item"><a href="../pages/heal.html">治療について</a></li>
             </ul>
         </div>
     </nav>
@@ -85,7 +89,7 @@
           </p>
       </div>
       <div class="f_content">
-              <p class="paragraph"><a href="../Index.html">HOME</a></p>
+              <p class="paragraph"><a href="../index.html">HOME</a></p>
               <p class="paragraph"><a href="../pages/access.html">アクセス</a></p>
               <p class="paragraph"><a href="../pages/hospital.html">院内案内</a></p>
       </div>
@@ -110,7 +114,7 @@
         }
        
         .ji{
-          margin-bottom: 3rem;;
+          margin-bottom: 3rem;
         }
        
         .jiko_osu{
@@ -130,7 +134,17 @@
           color: #C17316;
           font-weight: bold;
           font-size: 16px;
-          
+        }
+        @media screen and (max-width: 767px) {
+          .ji{
+            margin-bottom: 1rem;
+          }
+          .jiko_osu{
+            width: 70%;
+          }
+          .jiko_text{
+            padding: 1rem;
+          }
         }
     </style>
 </body>
